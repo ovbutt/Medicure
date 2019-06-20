@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ovais.medicure">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Signup"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".Forgot_Pass"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".NavigationActivity"
+            android:label="@string/nav_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutusActivity"
+            android:label="About Us" />
+        <activity
+            android:name=".TreatmentActivity"
+            android:label="Prescribe Treatment" />
+        <activity
+            android:name=".RecordsActivity"
+            android:label="Medical Records" />
+        <activity
+            android:name=".AddMyDoctor"
+            android:label="Add Doctor" />
+        <activity
+            android:name=".AddAppointmentAlert"
+            android:label="Set Appointment Alert" />
+        <activity
+            android:name=".AddDietAlert"
+            android:label="Set Diet Alert" />
+        <activity
+            android:name=".AddMedicineAlert"
+            android:label="Set Medicine Alert" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Profile" />
+        <activity
+            android:name=".BasicInfoActivity"
+            android:label="Basic Information" />
+        <activity
+            android:name=".AllergyActivity"
+            android:label="Allergies" />
+        <activity
+            android:name=".HealthBackgroundActivity"
+            android:label="Health Background" />
+        <activity
+            android:name=".AddRecordActivity"
+            android:label="Add Medical Records" />
+        <activity
+            android:name=".AlertActivity"
+            android:label="Notification &amp; Alerts" />
+        <activity
+            android:name=".MedicineAlertActivity"
+            android:label="Medicine Alert" />
+        <activity
+            android:name=".DietAlertActivity"
+            android:label="Diet Alert" />
+        <activity
+            android:name=".AppointmentAlertActivity"
+            android:label="Appointment Alert" />
+        <activity
+            android:name=".DoctorActivity"
+            android:label="Doctor" />
+        <activity
+            android:name=".AppointDoctorActivity"
+            android:label="Appoint Doctor" />
+        <activity
+            android:name=".MyDoctorActivity"
+            android:label="My Doctors" />
+        <activity
+            android:name=".ViewDoctorActivity"
+            android:label="Doctor" />
+        <activity android:name=".ImageViewer"></activity>
+
+        <receiver android:name=".AppointmentAlarmReceiver" android:process=":remote"/>
+        <receiver android:name=".DietAlarmReceiver" android:process=":remote"/>
+        <receiver android:name=".MedicineAlarmReceiver" android:process=":remote"/>
+
+    </application>
+
+</manifest>
